@@ -11,4 +11,4 @@ Spotify Link: https://open.spotify.com/artist/1ioo8TqdBc8RIzvSYkUS1y?si=0LBDEFMk
 Patrick Diamitani (2018-2024)
 
 Spotify Link: https://open.spotify.com/artist/0N3LRUvTtIok9S9z45ONvQ?si=pZs4JnVZSWmmvZ8nb_4hjA
-Youtube Link: https://www.youtube.com/channel/UC-Ma5IiJjm6lA1ETnVXC0Iw
+<br>Youtube Link: https://www.youtube.com/channel/UC-Ma5IiJjm6lA1ETnVXC0Iw
