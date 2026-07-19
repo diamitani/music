@@ -135,6 +135,19 @@ a {
   color: var(--text);
 }
 
+.nav-links a.active {
+  color: var(--text);
+}
+
+.nav-links a.active::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  margin-top: 4px;
+  background: var(--accent-2);
+}
+
 .nav-badge {
   font-family: var(--mono);
   font-size: 11px;
@@ -237,6 +250,27 @@ main {
 .btn-small:hover,
 .btn-small-outline:hover {
   transform: translateY(-2px);
+}
+
+/* Sub-page hero */
+.page-hero {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 90px 24px 60px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.page-title {
+  font-size: clamp(40px, 8vw, 84px);
+  font-weight: 900;
+  line-height: 0.98;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.page-hero .hero-sub {
+  margin-top: 0;
 }
 
 /* Marquee */
@@ -344,6 +378,120 @@ main {
   color: var(--text-dim);
   font-size: 13px;
   font-family: var(--mono);
+}
+
+.company-desc {
+  color: var(--text-dim);
+  font-size: 14px;
+  margin-top: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Value props (home) */
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.value-card {
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 30px 26px;
+  transition: border-color 0.2s ease;
+}
+
+.value-card:hover {
+  border-color: var(--accent);
+}
+
+.value-num {
+  font-family: var(--mono);
+  color: var(--accent-2);
+  font-size: 13px;
+}
+
+.value-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 14px 0 8px;
+}
+
+.value-card p {
+  color: var(--text-dim);
+  font-size: 15px;
+}
+
+/* Roster teaser (home) */
+.roster-teaser-section {
+  border-top: 1px solid var(--border-soft);
+  background: var(--bg-soft);
+}
+
+.teaser-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.teaser-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 20px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.teaser-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-2);
+}
+
+.teaser-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.roster-art-sm {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+}
+
+.roster-art-sm .roster-monogram {
+  font-size: 28px;
+}
+
+.ai-avatar-sm {
+  width: 48px;
+  height: 48px;
+}
+
+.ai-avatar-sm .ai-avatar-core {
+  width: 30px;
+  height: 30px;
+}
+
+.link-arrow {
+  display: inline-block;
+  margin-top: 28px;
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--accent-2);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.link-arrow:hover {
+  border-color: var(--accent-2);
 }
 
 /* Roster */
@@ -630,6 +778,38 @@ main {
   margin: 18px auto 32px;
 }
 
+/* Contact page */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.contact-card {
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 30px 26px;
+}
+
+.contact-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 16px 0 10px;
+}
+
+.contact-card p {
+  color: var(--text-dim);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.contact-cta {
+  justify-content: center;
+  margin-top: 56px;
+}
+
 /* Footer */
 .footer {
   border-top: 1px solid var(--border-soft);
@@ -671,6 +851,18 @@ main {
   }
 
   .goals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teaser-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 }
